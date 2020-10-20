@@ -1,20 +1,7 @@
 {
-  "compact": "false",
   "presets": [
     [
-      "env",
-      {
-        "targets": {
-          "node": "6.0"
-        }
-      }
+      "@babel/preset-env",
     ]
-  ],
-  "env": {
-    "test": {
-      "plugins": [
-        "istanbul"
-      ]
-    }
-  }
+  ]
 }

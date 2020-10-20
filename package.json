@@ -15,7 +15,7 @@
   },
   "description": "Common utilities for products from Peculiar Ventures",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=4.0.0"
   },
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -27,16 +27,22 @@
   "module": "./src/utils.js",
   "main": "./build/utils.js",
   "devDependencies": {
-    "babel-cli": "latest",
-    "mocha": "^3.0.2",
-    "nyc": "^11.6.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "babel-plugin-istanbul": "latest",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
     "cross-env": "^5.1.4",
-    "babel-plugin-istanbul": "^4.1.5",
-    "babel-preset-env": "latest",
-    "babel-polyfill": "^6.26.0",
-    "eslint": "^4.19.1"
+    "eslint": "^4.19.1",
+    "mocha": "^3.0.2",
+    "nyc": "^11.6.0"
   },
   "name": "pvutils",
   "version": "1.0.17",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1"
+  }
 }
