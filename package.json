@@ -23,8 +23,6 @@
     "watch": "babel src --compact=false --out-dir build --source-maps --watch",
     "test": "cross-env NODE_ENV=test nyc mocha --require babel-register --require babel-polyfill"
   },
-  "jsnext:main": "./src/utils.js",
-  "module": "./src/utils.js",
   "main": "./build/utils.js",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
@@ -37,7 +35,7 @@
     "mocha": "^3.0.2",
     "nyc": "^11.6.0"
   },
-  "name": "pvutils",
+  "name": "@esign/pvutils",
   "version": "1.0.17",
   "license": "MIT",
   "dependencies": {
